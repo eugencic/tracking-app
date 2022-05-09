@@ -32,7 +32,6 @@ class MyApp extends StatelessWidget {
         '/activity_history': (context) => ActivityHistory(),
       },
       initialRoute: '/home',
-      //initialRoute: '/home',
       home: ActivityHistory(),
     );
   }
