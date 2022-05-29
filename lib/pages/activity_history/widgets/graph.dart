@@ -132,7 +132,7 @@ class GraphPainter extends CustomPainter {
     }
 
     Paint linePaint = Paint()
-      ..color = Color(0xff30c3f9)
+      ..color = Colors.indigoAccent
       ..style = PaintingStyle.stroke
       ..strokeWidth = 3.0;
 
@@ -147,7 +147,7 @@ class GraphPainter extends CustomPainter {
           Offset(size.width / 2, 0),
           Offset(size.width / 2, size.height),
           [
-            Color(0xff30c3f9),
+            Colors.indigoAccent,
             Colors.white,
           ],
       )
@@ -159,7 +159,7 @@ class GraphPainter extends CustomPainter {
       ..strokeWidth = 8;
 
     Paint dotCenter = Paint()
-      ..color = Color(0xff30c3f9)
+      ..color = Colors.indigoAccent
       ..strokeWidth = 8;
 
     Path linePath = Path();

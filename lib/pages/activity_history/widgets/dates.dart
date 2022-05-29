@@ -46,8 +46,8 @@ class DateBox extends StatelessWidget {
         gradient: active
             ? LinearGradient(
             colors: const [
-              Color(0xff92e2ff),
-              Color(0xff1ebdf8),
+              Colors.indigoAccent,
+              Colors.indigo,
             ],
           begin: Alignment.topCenter,
         ): null,
