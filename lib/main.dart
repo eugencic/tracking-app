@@ -8,12 +8,13 @@ import 'package:tracking_app/services/auth_service.dart';
 import 'package:tracking_app/wrapper.dart';
 import 'package:tracking_app/pages/signup.dart';
 import 'package:tracking_app/pages/welcome.dart';
+import 'firebase_options.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-
-
+  await Firebase.initializeApp( options: DefaultFirebaseOptions.currentPlatform,
+  )
+  ;
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
   runApp(const MyApp());
 }
@@ -51,6 +52,7 @@ class MyApp extends StatelessWidget {
         //initialRoute: 'wrapper',
         //home: Wrapper(),
         home: Wrapper(),
+
       ),
     );
   }

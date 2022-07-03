@@ -53,7 +53,7 @@ class LoginPage extends StatelessWidget {
                   children: <Widget>[
                     Text("Login",
                     style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),),
-                    SizedBox(height: 20,),
+                    SizedBox(height: 20),
                     Text("Log into your account",
                     style: TextStyle(
                       fontSize: 15,

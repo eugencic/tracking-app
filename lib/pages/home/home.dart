@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:tracking_app/pages/home/widgets/activities.dart';
 import 'package:tracking_app/pages/home/widgets/recent_activities.dart';
 import 'package:tracking_app/widgets/bottom_navigation.dart';
 import 'package:tracking_app/pages/home/widgets/header.dart';
+
+import '../../services/test.dart';
 
 
 class Home extends StatelessWidget {
