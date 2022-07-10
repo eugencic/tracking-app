@@ -66,6 +66,24 @@ class SignupPage extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: TextField(
+                      // controller: ,
+                      decoration: InputDecoration(
+                          labelText: "First Name"
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: TextField(
+                      // controller: ,
+                      decoration: InputDecoration(
+                          labelText: "Last Name"
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: TextField(
                       controller: emailController,
                       decoration: InputDecoration(
                           labelText: "Email"
@@ -111,8 +129,8 @@ class SignupPage extends StatelessWidget {
 
                     db.collection('users').doc(uid.toString())
                         .set({
-                    'first_name': "Johny",
-                    'last_name': "Depp",
+                    'first_name': "Jana",
+                    'last_name': "Popa",
                     'age': 50,
                     'isDeleted':false,
                     'isBlocked':false,

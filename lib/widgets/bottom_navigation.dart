@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import 'package:tracking_app/pages/choose_activity/on_activity.dart';
 import 'package:tracking_app/pages/choose_activity/widgets/timer.dart';
 import 'package:tracking_app/pages/logout.dart';
+import 'package:tracking_app/pages/profile/profile_screen.dart';
 import '../pages/choose_activity/choose_activity.dart';
 import '../services/auth_service.dart';
 
@@ -43,15 +44,15 @@ class BottomNavigation extends StatelessWidget {
               },
               child: Icon(Icons.add_circle, size: 40)),
           GestureDetector(
-              onTap: () async {
-                // Navigator.push(
-                //     context, MaterialPageRoute(builder: (context) => OnActivity()));
-              },
+              /*onTap: () async {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => LogoutPage()));
+              },*/
               child: Icon(Icons.settings, size: 30)),
           GestureDetector(
               onTap: () async {
                 Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => LogoutPage()));
+                    context, MaterialPageRoute(builder: (context) => ProfileScreen()));
               }
             /*onTap: () async {
               await authService.signOut();

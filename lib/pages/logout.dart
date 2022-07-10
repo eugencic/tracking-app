@@ -27,7 +27,7 @@ class LogoutPage extends StatelessWidget {
                     height: 20,
                   ),
                   Text(
-                    "Are you sure to leave?",
+                    "Do you want to exit?",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 30,
@@ -51,6 +51,27 @@ class LogoutPage extends StatelessWidget {
                   MaterialButton(
                     minWidth: double.infinity,
                     height: 60,
+                    onPressed: () async {
+                      await authService.signOut();
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Wrapper()));
+                    },
+                    color: Color(0xff262e5b),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50)
+                    ),
+                    child: Text(
+                      "Yes",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 18
+                      ),
+                    ),
+                  ),
+                  SizedBox(height:20),
+                  MaterialButton(
+                    minWidth: double.infinity,
+                    height: 60,
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
                     },
@@ -68,28 +89,6 @@ class LogoutPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  // creating the signup button
-                  SizedBox(height:20),
-                  MaterialButton(
-                    minWidth: double.infinity,
-                    height: 60,
-                    onPressed: () async {
-                      await authService.signOut();
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Wrapper()));
-                    },
-                    color: Color(0xff262e5b),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(50)
-                    ),
-                    child: Text(
-                      "Yes",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w600,
-                          fontSize: 18
-                      ),
-                    ),
-                  )
                 ],
               )
             ],
