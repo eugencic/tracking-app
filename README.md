@@ -1,12 +1,12 @@
 # Implementierung von Anwendungssystemen
 
-##Projekt
+## Projekt
 Entwicklung einer wissenschaftlichen Aktivitäts-Tracking-App mit Webplattform
 
-##Idee
+## Idee
 Wissenschaftliches Online Tool zur Erhebung, Visualisierung und Analyse von Smartphone basierten Benutzeraktivitäten
 
-##Implementierung
+## Implementierung
 
 1. App
    - Dashboard
@@ -33,7 +33,7 @@ Wissenschaftliches Online Tool zur Erhebung, Visualisierung und Analyse von Smar
      - Verwaltung von Nutzern, Daten und Dashboard
      - Einfache Visualisierung von Daten
 
-##Rollen
+## Rollen
 
 1. Regulärer Teilnehmer
      - App-basiert (kein Zugriff auf Login-Bereich der Webpage)
@@ -66,5 +66,5 @@ Wissenschaftliches Online Tool zur Erhebung, Visualisierung und Analyse von Smar
        - Kann Dashboard verwalten
        - Alles andere
          - Erstellen, bearbeiten und löschen
-##Programmiersprache
+## Programmiersprache
   - Dart(Flutter)
