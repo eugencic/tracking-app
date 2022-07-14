@@ -5,7 +5,7 @@ import 'package:tracking_app/pages/home/widgets/recent_activities.dart';
 import 'package:tracking_app/widgets/bottom_navigation.dart';
 import 'package:tracking_app/pages/home/widgets/header.dart';
 
-import '../../services/test.dart';
+import '../../firebase/test.dart';
 
 
 class Home extends StatelessWidget {

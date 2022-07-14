@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../../services/auth_service.dart';
+import '../../firebase/auth_service.dart';
 import 'package:tracking_app/pages/login/signup.dart';
-import 'package:tracking_app/services/auth_service.dart';
-import 'package:tracking_app/wrapper.dart';
+import 'package:tracking_app/firebase/auth_service.dart';
+import 'package:tracking_app/firebase/wrapper.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);

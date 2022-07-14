@@ -4,11 +4,11 @@ import 'package:provider/provider.dart';
 import 'package:tracking_app/pages/activity_history/activity_history.dart';
 import 'package:tracking_app/pages/home/home.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:tracking_app/services/auth_service.dart';
-import 'package:tracking_app/wrapper.dart';
+import 'package:tracking_app/firebase/auth_service.dart';
+import 'package:tracking_app/firebase/wrapper.dart';
 import 'package:tracking_app/pages/login/signup.dart';
 import 'package:tracking_app/pages/login/welcome.dart';
-import 'firebase_options.dart';
+import 'firebase/firebase_options.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

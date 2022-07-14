@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tracking_app/pages/profile/profile_screen.dart';
 import '../pages/choose_activity/choose_activity.dart';
-import '../services/auth_service.dart';
+import '../firebase/auth_service.dart';
 
 class BottomNavigation extends StatelessWidget {
   const BottomNavigation({Key? key}) : super(key: key);

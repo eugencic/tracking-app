@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../../services/auth_service.dart';
+import '../../firebase/auth_service.dart';
 import 'package:tracking_app/pages/login/login.dart';
 
 class SignupPage extends StatelessWidget {
