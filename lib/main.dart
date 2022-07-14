@@ -6,15 +6,14 @@ import 'package:tracking_app/pages/home/home.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:tracking_app/services/auth_service.dart';
 import 'package:tracking_app/wrapper.dart';
-import 'package:tracking_app/pages/signup.dart';
-import 'package:tracking_app/pages/welcome.dart';
+import 'package:tracking_app/pages/login/signup.dart';
+import 'package:tracking_app/pages/login/welcome.dart';
 import 'firebase_options.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp( options: DefaultFirebaseOptions.currentPlatform,
-  )
-  ;
+  );
   SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
   runApp(const MyApp());
 }

@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-
-import '../../../widgets/bottom_navigation.dart';
-import '../../logout.dart';
+import 'package:provider/provider.dart';
+import '../../../services/auth_service.dart';
+import '../../../wrapper.dart';
 import 'profile_menu.dart';
 import 'profile_pic.dart';
 
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final authService = Provider.of<AuthService>(context);
     return SingleChildScrollView(
       padding: EdgeInsets.symmetric(vertical: 20),
       child: Column(
@@ -33,9 +34,10 @@ class Body extends StatelessWidget {
           ProfileMenu(
             text: "Log Out",
             icon: '',
-            press: () {
+            press: () async {
+              await authService.signOut();
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => LogoutPage()));
+                  context, MaterialPageRoute(builder: (context) => Wrapper()));
             },
           ),
           //SizedBox(height: 75),

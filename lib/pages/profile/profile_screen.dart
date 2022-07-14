@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-//import 'package:tracking/components/coustom_bottom_nav_bar.dart';
-//import 'package:shop_app/enums.dart';
-
 import 'components/body.dart';
 
 class ProfileScreen extends StatelessWidget {

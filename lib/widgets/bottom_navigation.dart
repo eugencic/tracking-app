@@ -1,11 +1,7 @@
-//import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tracking_app/pages/choose_activity/on_activity.dart';
-import 'package:tracking_app/pages/choose_activity/widgets/timer.dart';
-import 'package:tracking_app/pages/logout.dart';
 import 'package:tracking_app/pages/profile/profile_screen.dart';
 import '../pages/choose_activity/choose_activity.dart';
 import '../services/auth_service.dart';
