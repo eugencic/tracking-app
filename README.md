@@ -67,4 +67,4 @@ Wissenschaftliches Online Tool zur Erhebung, Visualisierung und Analyse von Smar
        - Alles andere
          - Erstellen, bearbeiten und löschen
 ## Programmiersprache
-  - Dart(Flutter)
+  - Dart (Flutter)
