@@ -1,4 +1,4 @@
-# Projekt des Universitätslehrgangs Implementierung von Anwendungssysteme
+# Projekt des Universitätslehrgangs Implementierung von Anwendungssystemen.
 
 ## Projekt
 Entwicklung einer wissenschaftlichen Aktivitäts-Tracking-App.
